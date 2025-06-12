@@ -55,11 +55,22 @@ st.markdown("""
     text-align: right;
     background: #e9c8ef;
 }
+.pv-table .unit {
+    color: #444;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 3px;
+}
 </style>
 """, unsafe_allow_html=True)
 
 # 값 입력 및 계산
-future_value = st.number_input('미래가치', value=10000000, step=100000, format="%d")
+col1, col2 = st.columns([1,1.4])
+with col1:
+    future_value = st.number_input('미래가치', value=10000000, step=100000, format="%d", key="future_value_input")
+with col2:
+    st.markdown(f"<span style='font-size:22px; color:#e30000; font-weight:800'>{future_value:,.0f} 원</span>", unsafe_allow_html=True)
+
 years = st.number_input('기간', value=7, step=1, format="%d")
 rate = st.number_input('이자율', value=5.00, step=0.1, format="%.2f")
 present_value = future_value / ((1 + rate / 100) ** years)
@@ -75,7 +86,7 @@ st.markdown(f"""
     </tr>
     <tr>
         <td class="input-label">미래가치</td>
-        <td class="input-value">{future_value:,.0f}</td>
+        <td class="input-value">{future_value:,.0f} <span class="unit">원</span></td>
     </tr>
     <tr>
         <td class="input-label">기간</td>
@@ -90,7 +101,7 @@ st.markdown(f"""
     </tr>
     <tr>
         <td class="input-label">현재가치</td>
-        <td class="output-value">{present_value:,.0f}</td>
+        <td class="output-value">{present_value:,.0f} <span class="unit">원</span></td>
     </tr>
 </table>
 """, unsafe_allow_html=True)
