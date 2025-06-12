@@ -100,3 +100,21 @@ st.markdown(f"""
     </tr>
 </table>
 """, unsafe_allow_html=True)
+
+# 👇 이 부분이 추가 설명과 이모지 안내!
+st.markdown("""
+---
+### 🔎 변수 설명
+
+- 💸 **미래가치**: 미래 특정 시점의 일정 금액<br>
+  <span style='color:#888;'>(단위: 원)</span>
+
+- ⏳ **기간**: 현재 시점과 미래 시점 사이의 기간<br>
+  <span style='color:#888;'>(단위: 년)</span>
+
+- 💹 **연 이자율**: 1년 동안 적용되는 이자율<br>
+  <span style='color:#888;'>(단위: %)</span>
+
+- 🏦 **현재가치**: 미래 특정 시점의 일정금액을 현재 시점의 가치로 환산한 금액<br>
+  <span style='color:#888;'>(단위: 원)</span>
+""", unsafe_allow_html=True)
