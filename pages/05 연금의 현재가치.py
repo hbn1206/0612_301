@@ -142,11 +142,14 @@ with col1:
 
 with col2:
     st.markdown("""
-    <div style="font-size:18px; line-height:2.0; margin-top:20px;">
-    은퇴 이후 매년 정기적으로 지급 받는 연금 금액(단위: 원)<br><br>
-    은퇴 이후 연금 지급 기간 (단위: 년)<br><br>
-    연 이자율 (단위: %)<br><br><br>
-    은퇴 이후 매년 정기적으로 지급 받는 연금 현금흐름의 합계 (단위: 원)<br><br>
-    <span style="color:#c93025; font-size:18px;">{pv:,.0f}</span> : 은퇴 이후 매년 정기적으로 지급 받는 연금 현금흐름의 은퇴시점의 가치 (단위: 원)
-    </div>
+    <br>
+    <hr style="margin-top:16px; margin-bottom:12px; border:1px solid #eee;">
+    <h3 style="font-size: 23px;">✨ 변수 설명</h3>
+    <ul style="font-size: 19px;">
+      <li>💸 <b>연금</b> : 은퇴 이후 매년 정기적으로 지급 받는 연금 금액<br><span style='color:#888;'>(단위: 원)</span></li>
+      <li>📅 <b>지급기간</b> : 은퇴 이후 연금 지급 기간<br><span style='color:#888;'>(단위: 년)</span></li>
+      <li>🟢 <b>이자율</b> : 연 이자율<br><span style='color:#888;'>(단위: %)</span></li>
+      <li>🧮 <b>연금 합계</b> : 은퇴 이후 매년 정기적으로 지급 받는 연금 현금흐름의 합계<br><span style='color:#888;'>(단위: 원)</span></li>
+      <li>💎 <b>연금 현재가치</b> : 은퇴 이후 매년 정기적으로 지급 받는 연금 현금흐름의 은퇴시점의 가치<br><span style='color:#888;'>(단위: 원)</span></li>
+    </ul>
     """, unsafe_allow_html=True)
