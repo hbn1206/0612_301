@@ -55,6 +55,12 @@ st.markdown("""
     text-align: right;
     background: #e9c8ef;
 }
+.pv-table .unit {
+    color: #444;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 3px;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -75,7 +81,7 @@ st.markdown(f"""
     </tr>
     <tr>
         <td class="input-label">미래가치</td>
-        <td class="input-value">{future_value:,.0f}</td>
+        <td class="input-value">{future_value:,.0f} <span class="unit">원</span></td>
     </tr>
     <tr>
         <td class="input-label">기간</td>
@@ -90,7 +96,7 @@ st.markdown(f"""
     </tr>
     <tr>
         <td class="input-label">현재가치</td>
-        <td class="output-value">{present_value:,.0f}</td>
+        <td class="output-value">{present_value:,.0f} <span class="unit">원</span></td>
     </tr>
 </table>
 """, unsafe_allow_html=True)
