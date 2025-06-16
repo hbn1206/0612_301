@@ -12,6 +12,20 @@ st.markdown("""
     overflow: hidden;
     padding: 0;
 }
+.cover-header {
+    position: absolute;
+    top: 1.2vw;
+    left: 2vw;
+    color: #e0f5ea;
+    font-size: 15px;
+    font-family: 'Pretendard','Malgun Gothic',sans-serif;
+    z-index: 10;
+    opacity: 0.9;
+}
+.cover-header a {
+    color: #e0f5ea;
+    text-decoration: none;
+}
 .cover-big-circle {
     position: absolute;
     top: 4vw;
@@ -113,6 +127,10 @@ st.markdown("""
 }
 </style>
 <div class="cover-bg">
+    <div class="cover-header">
+        💡 Made with ❤️ by 대원여고 HBN<br>
+        📧 문의: <a href="mailto:hbn@dwg.sen.hs.kr">hbn@dwg.sen.hs.kr</a>
+    </div>
     <div class="cover-shape1"></div>
     <div class="cover-big-circle"></div>
     <div class="cover-circle2"></div>
@@ -149,5 +167,4 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Streamlit 공간에는 아무 것도 표시하지 않기
 st.write("")
