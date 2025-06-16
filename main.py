@@ -128,8 +128,8 @@ st.markdown("""
 </style>
 <div class="cover-bg">
     <div class="cover-header">
-        💡 Made with ❤️ by 대원여고 HBN<br>
-        📧 문의: <a href="mailto:hbn@dwg.sen.hs.kr">hbn@dwg.sen.hs.kr</a>
+        💡 Made with ❤️ by 대원여자고등학교 황병남<br>
+        📧 오류 및 수정 문의: <a href="mailto:hbn@dwg.sen.hs.kr">hbn@dwg.sen.hs.kr</a>
     </div>
     <div class="cover-shape1"></div>
     <div class="cover-big-circle"></div>
